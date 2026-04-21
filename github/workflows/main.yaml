@@ -1,0 +1,23 @@
+name: My First MLOps pipeline
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: checkout Code
+        uses: actions/checkout@v3
+
+
+      - name: Run a Bash Script
+        run: |
+          echo "Hello from github actions!"
+          echo "This is running on a cloud sever."
+
+      - name: List files
+        run: ls -la
