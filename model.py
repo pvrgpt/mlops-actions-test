@@ -1,2 +1,2 @@
-def make_predictions(input_data):
+def make_prediction(input_data):
     return input_data * 2
