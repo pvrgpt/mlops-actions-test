@@ -1,2 +1,2 @@
 def make_prediction(input_data):
-    return input_data * 3
+    return input_data * 2
